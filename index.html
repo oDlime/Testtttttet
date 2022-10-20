@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <title>bootstrap</title>
+    <style>
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .title1 {
+            font-size: 30px;
+            font-weight: 600;
+        }
+        .title2 {
+            margin-top: 130px;
+            margin-bottom: 20px;
+            font-size: 50px;
+            font-weight: 200;
+        }
+        .card .img {
+            width: 100%;
+            height: 300px;
+            background-color: #55595c;
+            color: #f8f9fa;
+            font-size: 30px;
+            line-height: 300px;
+            text-align: center;
+        }
+        .card .content {
+            font-size: 25px;
+            margin: 10px 0px;
+        }
+        .card .time {
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            bottom: 20px;
+            color: #6c7592;
+            font-size: 20px;
+        }
+        .mfooter {
+            font-size: 23px;
+            color: #6c757d;
+            padding: 40px;
+            margin: 40px;
+        }
+        .totop {
+            position: relative;
+            bottom: 180px;
+            right: -80%;
+            font-size: 20px;
+        }
+        .mmain {
+            padding-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- header -->
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class=" row bg-dark p-5 row-cols-2">
+            <div class="col col-lg-8 col-12 m-4 p-3">
+                <h1 class="text-white">About</h1>
+                <p class="text-muted h4">Add some information about the album below, the author, or any other background
+                    context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them
+                    off to some social networking sites or contact information.</p>
+            </div>
+            <div class="col col-lg-3 m-4">
+                <h1 class="text-white">Contact</h1>
+                <a href="#" class="text-white h4">Follow on Twitter <br>
+                    Like on Facebook <br>
+                    Email me</a>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand title1 p-2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                    fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    aria-hidden="true" class="me-3" viewBox="0 0 24 24">
+                    <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                    <circle cx="12" cy="13" r="4" />
+                </svg>Album</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <!-- main -->
+    <div class="container mmain">
+        <div class="text-center row justify-content-center">
+            <h1 class="title2">Album example</h1>
+            <p class="h3 text-muted col-xl-6 col-md-8" style="font-weight: 100; line-height:40px;">Something short and
+                leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too
+                short so folks don’t simply skip over it entirely.</p>
+        </div>
+        <div class="row justify-content-center m-4">
+            <button type="button" class="btn btn-primary btn-lg col-md-3 m-2">Main call to action</button>
+            <button type="button" class="btn btn-secondary btn-lg col-md-3 m-2">Secondary action</button>
+        </div>
+    </div>
+    <!-- card -->
+    <div class="container-fluid p-3 p-md-5" style="background-color: #f8f9fa;">
+        <div class="row row-cols-xxl-3 row-cols-md-2 row-cols-1 p-md-2 p-0 acards">
+            <div class="col">
+                <div class="card m-2">
+                    <div class="img">Thumbnail</div>
+                    <div class="card-body">
+                        <div class="content">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This
+                            content is a little bit longer.
+                        </div>
+                        <div class="foot">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary btn-lg">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Edit</button>
+                            </div>
+                            <div class="time">
+                                9 mins
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <div class="img">Thumbnail</div>
+                    <div class="card-body">
+                        <div class="content">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This
+                            content is a little bit longer.
+                        </div>
+                        <div class="foot">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary btn-lg">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Edit</button>
+                            </div>
+                            <div class="time">
+                                9 mins
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <div class="img">Thumbnail</div>
+                    <div class="card-body">
+                        <div class="content">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This
+                            content is a little bit longer.
+                        </div>
+                        <div class="foot">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary btn-lg">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Edit</button>
+                            </div>
+                            <div class="time">
+                                9 mins
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <div class="img">Thumbnail</div>
+                    <div class="card-body">
+                        <div class="content">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This
+                            content is a little bit longer.
+                        </div>
+                        <div class="foot">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary btn-lg">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Edit</button>
+                            </div>
+                            <div class="time">
+                                9 mins
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <div class="img">Thumbnail</div>
+                    <div class="card-body">
+                        <div class="content">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This
+                            content is a little bit longer.
+                        </div>
+                        <div class="foot">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary btn-lg">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Edit</button>
+                            </div>
+                            <div class="time">
+                                9 mins
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <div class="img">Thumbnail</div>
+                    <div class="card-body">
+                        <div class="content">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This
+                            content is a little bit longer.
+                        </div>
+                        <div class="foot">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary btn-lg">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Edit</button>
+                            </div>
+                            <div class="time">
+                                9 mins
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <div class="img">Thumbnail</div>
+                    <div class="card-body">
+                        <div class="content">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This
+                            content is a little bit longer.
+                        </div>
+                        <div class="foot">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary btn-lg">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Edit</button>
+                            </div>
+                            <div class="time">
+                                9 mins
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <div class="img">Thumbnail</div>
+                    <div class="card-body">
+                        <div class="content">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This
+                            content is a little bit longer.
+                        </div>
+                        <div class="foot">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary btn-lg">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Edit</button>
+                            </div>
+                            <div class="time">
+                                9 mins
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card m-2">
+                    <div class="img">Thumbnail</div>
+                    <div class="card-body">
+                        <div class="content">
+                            This is a wider card with supporting text below as a natural lead-in to additional content.
+                            This
+                            content is a little bit longer.
+                        </div>
+                        <div class="foot">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-outline-secondary btn-lg">View</button>
+                                <button type="button" class="btn btn-outline-secondary btn-lg">Edit</button>
+                            </div>
+                            <div class="time">
+                                9 mins
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row mfooter">
+            <div class="col-lg-9 content">Album example is © Bootstrap, but please download and customize it for
+                yourself!<br>New to Bootstrap? <a href="#">Visit the homepage</a> or read our <a href="#">getting
+                    started guide</a>.</div>
+        </div>
+    </div>
+    <a href="#" class="totop">Back to top</a>
+</body>
+
+</html>
